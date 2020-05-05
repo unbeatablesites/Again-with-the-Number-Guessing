@@ -23,7 +23,7 @@ public class App {
 
         int userInput = scan.nextInt();
 
-        int count = 0;
+        int count = 1;
 
         do {
 
@@ -35,7 +35,7 @@ public class App {
         }while (userInput != random);
 
         System.out.println("That's right!  You're a good guesser.");
-        System.out.println("It only took you" + count + "tries.");
+        System.out.println("It only took you " + count + " tries.");
 
     }
 
