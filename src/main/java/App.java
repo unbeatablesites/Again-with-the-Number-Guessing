@@ -23,14 +23,19 @@ public class App {
 
         int userInput = scan.nextInt();
 
+        int count = 0;
+
         do {
 
+            count++;
             System.out.println("That is incorrect.  Guess again.");
             System.out.print("Your guess: ");
             userInput = scan.nextInt();
 
         }while (userInput != random);
 
+        System.out.println("That's right!  You're a good guesser.");
+        System.out.println("It only took you" + count + "tries.");
 
     }
 
