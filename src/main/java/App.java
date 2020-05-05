@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
@@ -7,6 +10,25 @@ public class App {
     }
 
     static void logic(){
+
+        System.out.println("I have chosen a number between 1 and 10.  Try to guess it.\n");
+
+        System.out.println("Your guess: ");
+
+        Scanner scan = new Scanner(System.in);
+
+        Random rand = new Random();
+
+        int random = 1 + rand.nextInt(10);
+
+        int userInput = scan.nextInt();
+
+        do {
+
+            System.out.println("That is incorrect.  Guess again.");
+
+        }while (userInput != random);
+
 
     }
 
