@@ -13,7 +13,7 @@ public class App {
 
         System.out.println("I have chosen a number between 1 and 10.  Try to guess it.\n");
 
-        System.out.println("Your guess: ");
+        System.out.print("Your guess: ");
 
         Scanner scan = new Scanner(System.in);
 
@@ -26,6 +26,8 @@ public class App {
         do {
 
             System.out.println("That is incorrect.  Guess again.");
+            System.out.print("Your guess: ");
+            userInput = scan.nextInt();
 
         }while (userInput != random);
 
